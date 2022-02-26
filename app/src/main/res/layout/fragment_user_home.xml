@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="56dp"
+    tools:context=".TakeAwayUser.Fragments.UserHomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/header_layout_bg">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Hello User,"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Good Morning"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:hint="Search for food"
+            android:inputType="textCapWords"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:drawablePadding="10dp"
+            android:background="@drawable/search_bg"
+            android:layout_below="@id/text"
+            android:layout_marginTop="10dp"
+            tools:ignore="HardcodedText" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/btnProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/profile_img" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/foodCategoryTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Something new"
+               android:textStyle="bold"
+               android:textSize="18sp"
+               android:layout_margin="10dp"
+               tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/foodCategoryTxt"
+                app:reverseLayout="true" />
+
+            <TextView
+                android:id="@+id/foodTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/recyclerView"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView2"
+                android:layout_below="@id/foodTxt"/>
+
+            <TextView
+                android:id="@+id/forYouTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose your favorite food"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/recyclerView2"
+                android:layout_margin="10dp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forYouTxt" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

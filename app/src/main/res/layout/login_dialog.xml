@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btnCancel"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textColor="@color/AccentColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:id="@+id/images"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCancel">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/managerImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/manager"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/question"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/question"
+                android:visibility="visible" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/waiterImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/waiter"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chefImg"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chef"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manager"
+                android:buttonTint="@color/SecondaryColor"
+                android:id="@+id/manager"
+                tools:ignore="HardcodedText" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waiter"
+                android:buttonTint="@color/SecondaryColor"
+                android:id="@+id/waiter"
+                tools:ignore="HardcodedText" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/SecondaryColor"
+                android:text="Kitchen"
+                android:id="@+id/kitchen"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:layout_margin="10dp"
+            android:layout_below="@id/radioGroup"
+            app:boxStrokeColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Username"
+            tools:ignore="HardcodedText">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableTint="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/black"
+            android:layout_below="@id/textField"
+            android:layout_margin="10dp"
+            app:boxStrokeColor="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="Password"
+            app:passwordToggleEnabled="true"
+            tools:ignore="HardcodedText">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@color/white"
+                android:drawableTint="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordField"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/AccentColor"
+            android:text="Login"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/11/2021"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/regularColor"
+            android:text="Status : Request"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/bill"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/regularColor"
+            android:layout_alignParentRight="true"
+            android:text="Total Bill : ₹ -"
+            android:textSize="15sp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btnViewBill"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Bill"
+            android:layout_below="@id/status"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/regularColor"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

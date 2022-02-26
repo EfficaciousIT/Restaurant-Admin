@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".NewOrder.NewOrderFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AccentColor"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="New order"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_gravity="right"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/available"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Available"
+               android:textColor="@color/white"
+               android:fontFamily="sans-serif-condensed-light"
+               android:textSize="18sp"
+               android:drawableLeft="@drawable/available_18x18"
+               android:drawablePadding="5dp"
+               android:layout_gravity="right"
+               android:layout_marginRight="10dp"
+               tools:ignore="HardcodedText" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:layout_toRightOf="@id/available"
+               android:drawableLeft="@drawable/book_18x18"
+               android:drawablePadding="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="Occupied"
+               android:textColor="@color/white"
+               android:textSize="18sp"
+               tools:ignore="HardcodedText" />
+
+       </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:overScrollMode="never"
+        android:id="@+id/recyclerView"/>
+
+</RelativeLayout>

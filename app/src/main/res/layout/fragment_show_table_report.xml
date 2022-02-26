@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="56dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard.ShowTableReportFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/AccentColor"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Reports"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptyState"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        app:lottie_rawRes="@raw/no_data_found"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:id="@+id/emptyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report not found !!"
+        android:layout_below="@id/emptyState"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/reportDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

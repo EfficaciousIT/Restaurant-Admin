@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    tools:context=".DeliveryBoy.DeliveryBoyDetailsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="20dp"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profileLayout"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_img" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/profileLayout"
+                android:text="Delivery boy Name"
+                android:textStyle="bold"
+                android:textColor="@color/regularColor"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/mobileNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userName"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/profileLayout"
+                android:text="Mobile Number"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/totalOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobileNumber"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/profileLayout"
+                android:text="Total Order : 00"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.anychart.AnyChartView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/infoLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pieChart"/>
+
+    <ProgressBar
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loader"/>
+
+    <TextView
+        android:id="@+id/orderData"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order data not found !!"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

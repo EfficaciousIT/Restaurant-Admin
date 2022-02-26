@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/tableStatus"
+        android:title="Table Status"
+        android:icon="@drawable/table"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/takeAway"
+        android:title="Take Away"
+        android:icon="@drawable/take_away"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/graph"
+        android:title="DashBoard"
+        android:icon="@drawable/pie_chart"
+        tools:ignore="HardcodedText" />
+
+    <item android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/setting"
+        tools:ignore="HardcodedText" />
+
+</menu>

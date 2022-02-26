@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:civ_border_color="@color/regularColor"
+            app:civ_border_width="0.6dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/profile_img" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profileImg"
+            android:hint="loading.."
+            android:textColor="@color/regularColor"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="loading.."
+            android:layout_toRightOf="@id/profileImg"
+            android:layout_below="@id/userName"/>
+
+        <TextView
+            android:id="@+id/totalAmount"
+            tools:ignore="HardcodedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textColor="@color/PrimaryColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/regularColor"
+            android:layout_below="@id/profileImg"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/addressTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address :"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/regularColor"/>
+
+        <TextView
+            android:id="@+id/deliveryAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/addressTxt"
+            android:hint="loading.."/>
+
+        <Button
+            android:id="@+id/btnViewOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliveryAddress"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="View Order"
+            android:textAllCaps="false"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/status"
+            tools:ignore="HardcodedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliveryAddress"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold|italic"
+            android:text="Request Pending"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

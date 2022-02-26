@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Delivery boy"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_alignParentRight="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_below="@id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Full Name"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableTint="@color/black"
+            android:inputType="textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/mobileLayout"
+        android:layout_below="@id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Mobile number"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableTint="@color/black"
+            android:inputType="phone"
+            android:maxLength="10"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAddBoy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileLayout"
+        android:layout_marginTop="20dp"
+        android:text="Add"
+        tools:ignore="HardcodedText" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mobileLayout"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/foodImg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sea_food"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodImg"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Special Rice"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="$10"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/AccentColor"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAdded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:backgroundTint="@color/inActiveColor"
+            android:layout_below="@id/foodName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Added to cart"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodName"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:id="@+id/loader"/>
+
+
+        <ImageView
+            android:id="@+id/vegImg"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/non_veg"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewOrder.TableStatusFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/AccentColor"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Table status"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/available_18x18"
+                android:drawablePadding="5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_toRightOf="@id/available"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed-light"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/book_18x18"
+                android:drawablePadding="5dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:overScrollMode="never"
+        android:id="@+id/recyclerView"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/error404"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        app:lottie_rawRes="@raw/error_404"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        app:lottie_rawRes="@raw/empty_state"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+    <TextView
+        android:id="@+id/emptyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not found"
+        android:layout_below="@id/emptyState"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/existing_order_menu_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order_add_new_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order_menu_category.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order_menu_list.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_menu_category.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_menu_list.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_select_menu_category.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/fragment_view_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/E-Smart Restaurant/app/src/main/res/layout/menu_view.xml" value="0.25" />
+<<<<<<< HEAD
+=======
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/drawable/bill_border_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/bill_menu_detail_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/bill_menu_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/bill_show_dialog.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/cart_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/existing_order_menu_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_bill_detail.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_bill_table_status.xml" value="0.25" />
+>>>>>>> 748c0cc ([ES-25] Display bill and close the order)
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_existing_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_kitchen_existing_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_kitchen_home.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_kitchen_view_order.xml" value="0.2359375" />
+<<<<<<< HEAD
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_view_order.xml" value="0.25" />
+=======
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_total_bill.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/fragment_view_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/menu_view.xml" value="0.25" />
+>>>>>>> 748c0cc ([ES-25] Display bill and close the order)
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/layout/table_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/NewRestaurant/E-Smart Restaurant/app/src/main/res/menu/vert_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/drawable/setting_menu_bg.xml" value="0.26614583333333336" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/activity_kitchen_main.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/activity_waiter_main.xml" value="0.2359375" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/category_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_add_food_in_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_existing_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_existing_order_add_new_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_kitchen_existing_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_kitchen_home.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_kitchen_new_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_menu_category.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_menu_list.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_new_order.xml" value="0.20833333333333334" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_select_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_select_menu_category.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_table_status.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/fragment_view_order.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/menu_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/layout/table_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/menu/kitchen_bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya Shinde/Efficacious Project/app/src/main/res/menu/manager_bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable-v24/bg.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable-v24/btn_bg.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable-v24/row_bg.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable/table_available_bg.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/drawable/table_unavailable_bg.xml" value="0.2203125" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/activity_splash_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/badge_style.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/cart_view.xml" value="0.25" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_cart.xml" value="0.19010416666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_existing_order.xml" value="0.19010416666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_new_order.xml" value="0.19010416666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_select_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_table_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/fragment_view_order.xml" value="0.19010416666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/login_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/menu_view.xml" value="0.5" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/select_table_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/table_details_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ajinkya(Android)/ESmartsRestaurant/app/src/main/res/layout/table_view.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

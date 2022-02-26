@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewOrder.CartFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@color/AccentColor"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Your Cart"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Order"
+            android:textColor="@color/AccentColor"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:indeterminateTint="@color/white"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar"
+        android:overScrollMode="never"
+        android:id="@+id/recyclerView"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/empty"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+    <TextView
+        android:id="@+id/emptyTxt"
+        android:layout_below="@id/lottie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:text="Empty cart !!"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_done_24"
+        app:tint="@android:color/white" />
+
+</RelativeLayout>

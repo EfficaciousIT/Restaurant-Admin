@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Book a table"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/tableImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text"
+            android:src="@drawable/two_chair" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/PrimaryColor"
+            android:layout_below="@id/tableImg"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableImg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="How many people ?"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@id/tableImg"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:drawableRight="@drawable/ic_baseline_add_circle_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingTop="3dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="3dp"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/btnMinus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/tableImg"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/btnAdd"
+            android:src="@drawable/ic_baseline_remove_circle_24" />
+
+
+
+        <Button
+            android:id="@+id/btnBookTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/PrimaryColor"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Book Table"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

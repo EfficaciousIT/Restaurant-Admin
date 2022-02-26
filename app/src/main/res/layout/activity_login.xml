@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Base.LoginActivity">
+
+    <ImageView
+        android:id="@+id/bgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_img" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Welcome to"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/app_name"
+        android:textColor="@color/AccentColor"
+        android:textSize="35sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Your favorite food delivered fast at your door"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnRestaurantLoginBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/AccentColor"
+        android:text="Login"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnCustomerLoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:textColor="@color/teal_700"
+        android:layout_below="@id/btnCustomerLoginBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:text="Restaurant login here"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

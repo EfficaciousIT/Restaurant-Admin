@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attendance.MarkAttendanceFragment">
+
+    <FrameLayout
+        android:id="@+id/cal_container"
+        android:layout_width="354dp"
+        android:layout_height="381dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Button
+        android:id="@+id/btnMarkAttendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cal_container"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/regularColor"
+        android:text="Mark Attendance"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMarkAttendance"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09/07/1999"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/regularColor"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present"
+                android:buttonTint="#00C853"/>
+
+            <RadioButton
+                android:id="@+id/absent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="#D50000"/>
+            <RadioButton
+                android:id="@+id/leave"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Leave"
+                android:buttonTint="#2C4B4E"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_below="@id/radioGroup"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

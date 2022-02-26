@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textOverView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Overview"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="10dp"
+                android:layout_margin="20dp"
+                android:layout_below="@id/textOverView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:id="@+id/tableLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/revenue"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="15dp"
+                                android:gravity="center"
+                                android:background="@drawable/bill_border_bg"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/totalRevenue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="₹0"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/totalRevenue"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Total revenue"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/order"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/bill_border_bg">
+
+
+                                <TextView
+                                    android:id="@+id/totalOrder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="#0"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/totalOrder"
+                                    android:layout_centerHorizontal="true"
+                                    android:textStyle="bold"
+                                    android:text="Total order"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/takeAway"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/bill_border_bg">
+
+                                <TextView
+                                    android:id="@+id/takeAwayOrder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="#0"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/takeAwayOrder"
+                                    android:layout_centerHorizontal="true"
+                                    android:textStyle="bold"
+                                    android:text="Takeaway order"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/user"
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:layout_margin="15dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="@drawable/bill_border_bg">
+
+                                <TextView
+                                    android:id="@+id/totalRegisterUser"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="#0"
+                                    android:textColor="@color/black"
+                                    android:textSize="20dp"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/totalRegisterUser"
+                                    android:layout_centerHorizontal="true"
+                                    android:text="Total register user"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

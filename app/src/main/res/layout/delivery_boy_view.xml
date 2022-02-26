@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:ignore="HardcodedText">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_img"
+            android:id="@+id/profileImg"/>
+
+        <TextView
+            android:id="@+id/deliveryBoyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Boy Name"
+            android:layout_toRightOf="@id/profileImg"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deliveryBoyName"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/profileImg"
+            android:text="+919096618447" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active now"
+            android:layout_toRightOf="@id/profileImg"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/mobileNumber"/>
+
+        <ImageView
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
